@@ -30,4 +30,15 @@ class CalculadoraSueldo:
     
     #Nuestra segunda version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
 
+    def imprimir_boleta_pago(self):
+        
+        #Método para imprimir la boleta de pago del trabajador.
+    
+        sueldo_neto = self.calcular_sueldo()
+        print("Boleta de Pago")
+        print("Nombre del Trabajador:", self.nombre_trabajador)
+        print("Sueldo Neto a Pagar:", sueldo_neto)
+
+    #Nuestra tercera version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+
 
