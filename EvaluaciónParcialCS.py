@@ -7,5 +7,27 @@ class CalculadoraSueldo:
         self.minutos_tardanza = minutos_tardanza
         self.horas_extras = horas_extras
 
+    #Nuestra primera version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+    def calcular_sueldo(self):
+        
+        # Cálculo de bonificaciones
+        pago_horas_extras = 1.50 * self.horas_extras * self.sueldo_basico / 30 / 8
+        movilidad = 1000
+        bonificacion_suplementaria = 0.03 * self.sueldo_basico
+        bonificaciones = movilidad + bonificacion_suplementaria + pago_horas_extras
+
+        # Cálculo de descuentos
+        remuneracion_computable = self.sueldo_basico + movilidad + bonificacion_suplementaria
+        remuneracion_minima = self.sueldo_basico + bonificaciones
+        descuento_faltas = remuneracion_computable / 30 * self.dias_falta
+        descuento_tardanzas = remuneracion_computable / 30 / 8 / 60 * self.minutos_tardanza
+        descuentos = descuento_faltas + descuento_tardanzas
+
+        # Cálculo sueldo neto
+        sueldo_neto = self.sueldo_basico + bonificaciones - descuentos
+
+        return sueldo_neto
     
+    #Nuestra segunda version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+
 
