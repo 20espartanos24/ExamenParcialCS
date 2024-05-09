@@ -8,9 +8,9 @@ los calculos se deberia obtener el sueldo neto que recibe el trabajor. Para el c
 tienen un buen manejo en los descuentos y bonificaciones, lo que complica el calculo de sueldo y por consiguiente la rentabilidad de la empresa.
 
 INTEGRANTES:
-AGUILA BARRIENTOS Erick Kevin 
-CONDORI MAMANI Victor 
-BOLAÑOS GAMARRA Carlos Alberto 
-PPACSI CHILLIHUANI Raul 
-HOLGADO QUISPE Rodrigo Leandro 
+AGUILA BARRIENTOS Erick Kevin,
+CONDORI MAMANI Victor, 
+BOLAÑOS GAMARRA Carlos Alberto,
+PPACSI CHILLIHUANI Raul, 
+HOLGADO QUISPE Rodrigo Leandro, 
 OCHOA CUTIPA Edwards Andree 
