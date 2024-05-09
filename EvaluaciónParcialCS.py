@@ -8,6 +8,7 @@ class CalculadoraSueldo:
         self.horas_extras = horas_extras
 
     #Nuestra primera version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+
     def calcular_sueldo(self):
         
         # Cálculo de bonificaciones
@@ -28,7 +29,7 @@ class CalculadoraSueldo:
 
         return sueldo_neto
     
-    #Nuestra segunda version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+    #Nuestra segunda version de prueba donde realizamos el metodo de calcular_sueldo
 
     def imprimir_boleta_pago(self):
         
@@ -39,6 +40,25 @@ class CalculadoraSueldo:
         print("Nombre del Trabajador:", self.nombre_trabajador)
         print("Sueldo Neto a Pagar:", sueldo_neto)
 
-    #Nuestra tercera version de prueba donde realizamos el constructor de la clase CalculadoraSueldo
+    #Nuestra tercera version de prueba donde realizamos el metodo de imprimir_boleta_pago
+
+def main():
+    
+    #Función principal del programa.
+    
+    # Ingreso de datos
+    nombre_trabajador = input("Ingrese nombre del trabajador: ")
+    sueldo_basico = float(input("Ingrese sueldo básico del trabajador: "))
+    dias_falta = int(input("Ingrese cantidad de días de falta: "))
+    minutos_tardanza = int(input("Ingrese cantidad de minutos de tardanza: "))
+    horas_extras = int(input("Ingrese cantidad de horas extras trabajadas: "))
+
+    # Crear instancia de la calculadora de sueldo
+    calculadora_sueldo = CalculadoraSueldo(nombre_trabajador, sueldo_basico, dias_falta, minutos_tardanza, horas_extras)
+
+    # Imprimir boleta de pago
+    calculadora_sueldo.imprimir_boleta_pago()
+
+#Nuestra cuarta version de prueba donde realizamos el metodo de main
 
 
