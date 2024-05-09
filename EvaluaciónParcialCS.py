@@ -61,4 +61,7 @@ def main():
 
 #Nuestra cuarta version de prueba donde realizamos el metodo de main
 
+if __name__ == "__main__":
+    main()
 
+#Nuestra quinta y ultima version de prueba donde ejecutamos el programa
